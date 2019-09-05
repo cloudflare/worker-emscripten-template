@@ -1,5 +1,6 @@
 {
   "name": "{{ project-name }}",
+  "private": true,
   "version": "1.0.0",
   "description": "A template for kick starting a Cloudflare Workers + Emscripten + Wasm project",
   "main": "index.js",
