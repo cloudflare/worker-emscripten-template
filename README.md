@@ -11,7 +11,7 @@ This template requires [Docker](https://docs.docker.com/install/) for providing 
 
 ## Wrangler
 
-This template requires version >=1.6.0 of [Wrangler](https://github.com/cloudflare/wrangler)
+This template requires version >=1.14.0 of [Wrangler](https://github.com/cloudflare/wrangler)
 
 ```console
 $ wrangler generate myapp https://github.com/cloudflare/worker-emscripten-template
