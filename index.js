@@ -11,12 +11,12 @@ addEventListener('fetch', event => {
 // so we can initialize the WASM instance ourselves
 // since Workers puts your wasm file in global scope
 // as a binding. In this case, this binding is called
-// `wasm` as that is the name Wrangler uses
+// `WASM_MODULE` as that is the name Wrangler uses
 // for any uploaded wasm module
 let emscripten_module = new Promise((resolve, reject) => {
   emscripten({
     instantiateWasm(info, receive) {
-      let instance = new WebAssembly.Instance(wasm, info)
+      let instance = new WebAssembly.Instance(WASM_MODULE, info)
       receive(instance)
       return instance.exports
     },
